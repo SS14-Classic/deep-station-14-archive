@@ -242,25 +242,34 @@
     - buzzes.
     - buzzes!
 
+
+# IPC emotes
 - type: emote
-  id: Weh
+  id: Whirr
   category: Vocal
-  chatMessages: [Wehs!]
+  chatMessages: [whirrs]
+  chatTriggers:
+    - whirr
+    - whirrs
+    - whirrs.
+    - whirrs!
 
 - type: emote
-  id: Chirp
+  id: Beep
   category: Vocal
-  chatMessages: [chirps!]
+  chatMessages: [beeps]
   chatTriggers:
-    - chirp
-    - chirp!
-    - chirp.
-    - chirps
-    - churps.
-    - chirps!
-    - chirped
-    - chirped.
-    - chirped!
-    - chirping
-    - chirping.
-    - chirping!
+    - beep
+    - beeps
+    - beeps.
+    - beeps!
+
+- type: emote
+  id: Ping
+  category: Vocal
+  chatMessages: [pings]
+  chatTriggers:
+    - ping
+    - pings
+    - pings.
+    - pings!
