@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation at commit https://github.com/Baystation12/Baystation12/commit/bddd2b27f6103e46dadb6d251c7c1832e012a84d",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "wallmed",
+      "directions": 4
+    },
+    {
+      "name": "wallmed-vend",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.6
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.6
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.6
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "wallmed-deny",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "wallmed-off",
+      "directions": 4
+    },
+    {
+      "name": "wallmed-broken",
+      "directions": 4
+    },
+    {
+      "name": "wallmed-panel",
+      "directions": 4
+    }
+  ]
+}

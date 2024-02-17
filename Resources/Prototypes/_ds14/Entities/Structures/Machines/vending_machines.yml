@@ -1,0 +1,122 @@
+# DS14 Vending machines
+
+# ADH = adherent tool. Species specific tools? No use currently.
+
+- type: entity
+  parent: VendingMachineCigs
+  id: VendingMachineCigsDS14
+  suffix: DS14
+  description: A specialized vending machine designed to contribute to your slow and uncomfortable death.
+  components:
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    sprite: _ds14/Structures/Machines/VendingMachines/cigs.rsi
+    noRot: true
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+
+- type: entity
+  parent: VendingMachineCoffee
+  id: VendingMachineCoffeeDS14
+  suffix: DS14
+  components:
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    sprite: _ds14/Structures/Machines/VendingMachines/coffee.rsi
+    noRot: true
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: "screen"
+      map: ["enum.VendingMachineVisualLayers.Screen"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+      
+- type: entity
+  parent: VendingMachineCola
+  id: VendingMachineColaDS14
+  suffix: DS14
+  components:
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    sprite: _ds14/Structures/Machines/VendingMachines/cola.rsi
+    noRot: true
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+
+- type: entity
+  parent: VendingMachineDinnerware
+  id: VendingMachineDinnerwareDS14
+  components:
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    sprite: _ds14/Structures/Machines/VendingMachines/dinnerware.rsi
+    noRot: true
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+
+# Drying Rack ############################################################
+
+- type: entity
+  parent: VendingMachineEngivend
+  id: VendingMachineEngivendDS14
+  suffix: DS14
+  components:
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    sprite: _ds14/Structures/Machines/VendingMachines/engivend.rsi
+    noRot: true
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+
+- type: entity
+  parent: VendingMachineVendomat
+  id: VendingMachineVendomatDS14
+  suffix: DS14
+  components:
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    sprite: _ds14/Structures/Machines/VendingMachines/engivend_green.rsi
+    noRot: true
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]

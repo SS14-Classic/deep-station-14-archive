@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation at commit https://github.com/Baystation12/Baystation12/commit/bddd2b27f6103e46dadb6d251c7c1832e012a84d",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "soda_machine",
+      "directions": 4
+    },
+    {
+      "name": "soda_machine-vend",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.8,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.8,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.8,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.8,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "soda_machine-deny",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "soda_machine-off",
+      "directions": 4
+    },
+    {
+      "name": "soda_machine-broken",
+      "directions": 4
+    },
+    {
+      "name": "soda_machine-panel",
+      "directions": 4
+    }
+  ]
+}
