@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "uniform",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "uniform-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "name": "uniform-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -76,15 +76,15 @@
       ]
     },
     {
-      "name": "uniform-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "uniform-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "uniform-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

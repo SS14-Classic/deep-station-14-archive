@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "games",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "games-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "name": "games-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -72,15 +72,15 @@
       ]
     },
     {
-      "name": "games-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "games-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "games-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

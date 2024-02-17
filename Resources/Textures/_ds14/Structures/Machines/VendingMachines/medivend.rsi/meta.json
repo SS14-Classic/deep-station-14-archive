@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "med",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "med-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "name": "med-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -76,15 +76,15 @@
       ]
     },
     {
-      "name": "med-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "med-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "med-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

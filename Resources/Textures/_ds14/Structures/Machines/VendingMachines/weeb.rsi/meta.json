@@ -8,7 +8,7 @@
   },
   "states": [
     {
-      "name": "weeb",
+      "name": "normal-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "name": "weeb-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "name": "weeb-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -90,15 +90,15 @@
       ]
     },
     {
-      "name": "weeb-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "weeb-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "weeb-fan",
+      "name": "fan",
       "directions": 4,
       "delays": [
         [
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "name": "weeb-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

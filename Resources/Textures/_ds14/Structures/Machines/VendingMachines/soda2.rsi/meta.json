@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "soda_machine",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "soda_machine-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "name": "soda_machine-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -72,15 +72,15 @@
       ]
     },
     {
-      "name": "soda_machine-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "soda_machine-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "soda_machine-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

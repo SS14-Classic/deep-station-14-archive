@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "laptop",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "laptop-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "name": "laptop-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -80,15 +80,15 @@
       ]
     },
     {
-      "name": "laptop-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "laptop-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "laptop-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

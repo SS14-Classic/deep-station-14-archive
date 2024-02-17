@@ -8,11 +8,33 @@
   },
   "states": [
     {
-      "name": "sovietsoda",
-      "directions": 4
+      "name": "normal-unshaded",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
     },
     {
-      "name": "sovietsoda-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -46,37 +68,41 @@
       ]
     },
     {
-      "name": "sovietsoda-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
-          0.4,
-          0.4
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          0.4,
-          0.4
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          0.4,
-          0.4
+          0.1,
+          0.1,
+          0.1
         ],
         [
-          0.4,
-          0.4
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
     {
-      "name": "sovietsoda-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "sovietsoda-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "sovietsoda-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

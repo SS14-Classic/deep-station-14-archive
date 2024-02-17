@@ -8,7 +8,7 @@
   },
   "states": [
     {
-      "name": "solsnack",
+      "name": "normal-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "name": "solsnack-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "name": "solsnack-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -94,11 +94,15 @@
       ]
     },
     {
-      "name": "solsnack-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "solsnack-broken",
+      "name": "broken",
+      "directions": 4
+    },
+    {
+      "name": "panel",
       "directions": 4
     }
   ]

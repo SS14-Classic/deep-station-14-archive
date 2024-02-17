@@ -8,7 +8,7 @@
   },
   "states": [
     {
-      "name": "lavatory",
+      "name": "normal-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "name": "lavatory-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "name": "lavatory-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -94,15 +94,15 @@
       ]
     },
     {
-      "name": "lavatory-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "lavatory-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "lavatory-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "seeds_generic",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "seeds_generic-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "name": "seeds_generic-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -96,15 +96,15 @@
       ]
     },
     {
-      "name": "seeds_generic-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "seeds_generic-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "seeds_generic-panel",
+      "name": "panel",
       "directions": 4
     },
     {

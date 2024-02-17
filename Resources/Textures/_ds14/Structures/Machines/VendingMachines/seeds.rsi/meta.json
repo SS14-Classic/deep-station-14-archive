@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "seeds",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "seeds-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "name": "seeds-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -88,15 +88,15 @@
       ]
     },
     {
-      "name": "seeds-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "seeds-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "seeds-panel",
+      "name": "panel",
       "directions": 4
     },
     {

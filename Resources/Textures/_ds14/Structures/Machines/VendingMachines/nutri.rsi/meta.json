@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "nutri",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "nutri-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "name": "nutri_deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -72,15 +72,15 @@
       ]
     },
     {
-      "name": "nutri-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "nutri-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "nutri-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

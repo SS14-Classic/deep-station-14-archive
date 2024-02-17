@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "generic",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "generic-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "name": "generic-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -72,15 +72,15 @@
       ]
     },
     {
-      "name": "generic-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "generic-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "generic-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "wallmed",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "wallmed-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "name": "wallmed-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -72,15 +72,15 @@
       ]
     },
     {
-      "name": "wallmed-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "wallmed-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "wallmed-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

@@ -8,7 +8,7 @@
   },
   "states": [
     {
-      "name": "hotfood",
+      "name": "normal-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "name": "hotfood-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "name": "hotfood-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -146,15 +146,15 @@
       ]
     },
     {
-      "name": "hotfood-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "hotfood-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "hotfood-heater",
+      "name": "heater",
       "directions": 4,
       "delays": [
         [
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "name": "hotfood-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

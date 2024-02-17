@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "tool",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "tool-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "name": "tool-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -76,15 +76,15 @@
       ]
     },
     {
-      "name": "tool-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "tool-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "tool-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

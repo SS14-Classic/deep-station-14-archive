@@ -8,7 +8,7 @@
   },
   "states": [
     {
-      "name": "magivend",
+      "name": "normal-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "name": "magivend-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "name": "magivend-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -90,15 +90,15 @@
       ]
     },
     {
-      "name": "magivend-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "magivend-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "magivend-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

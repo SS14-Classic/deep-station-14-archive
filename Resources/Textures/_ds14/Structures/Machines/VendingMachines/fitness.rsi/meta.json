@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "fitness",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "fitness-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "name": "fitness-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -72,15 +72,15 @@
       ]
     },
     {
-      "name": "fitness-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "fitness-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "fitness-overlay",
+      "name": "screen",
       "directions": 4,
       "delays": [
         [
@@ -158,7 +158,7 @@
       ]
     },
     {
-      "name": "fitness-panel",
+      "name": "panel",
       "directions": 4
     }
   ]

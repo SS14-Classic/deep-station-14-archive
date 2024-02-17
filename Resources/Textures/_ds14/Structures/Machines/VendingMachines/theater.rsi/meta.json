@@ -8,11 +8,11 @@
   },
   "states": [
     {
-      "name": "theater",
+      "name": "normal-unshaded",
       "directions": 4
     },
     {
-      "name": "theater-vend",
+      "name": "eject-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "name": "theater-deny",
+      "name": "deny-unshaded",
       "directions": 4,
       "delays": [
         [
@@ -72,15 +72,15 @@
       ]
     },
     {
-      "name": "theater-off",
+      "name": "off",
       "directions": 4
     },
     {
-      "name": "theater-broken",
+      "name": "broken",
       "directions": 4
     },
     {
-      "name": "theater-overlay",
+      "name": "screen",
       "directions": 4,
       "delays": [
         [
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "name": "theater-panel",
+      "name": "panel",
       "directions": 4
     }
   ]
