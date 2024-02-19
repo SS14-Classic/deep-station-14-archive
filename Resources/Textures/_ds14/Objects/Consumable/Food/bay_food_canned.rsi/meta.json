@@ -8,9 +8,6 @@
   },
   "states": [
     {
-      "name": ""
-    },
-    {
       "name": "blank"
     },
     {
@@ -57,12 +54,6 @@
     },
     {
       "name": "carpeggs"
-    },
-    {
-      "name": "lunacake"
-    },
-    {
-      "name": "lunacake_wrapped"
     }
   ]
 }

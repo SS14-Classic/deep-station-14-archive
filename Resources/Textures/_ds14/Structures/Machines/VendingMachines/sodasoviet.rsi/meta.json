@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from Baystation at commit https://github.com/Baystation12/Baystation12/commit/bddd2b27f6103e46dadb6d251c7c1832e012a84d",
+  "copyright": "Taken at commit https://github.com/Baystation12/Baystation12/commit/c39dcc148c04065ebac05f63bf3a556e8f21cac4",
   "size": {
     "x": 32,
     "y": 32
@@ -9,29 +9,7 @@
   "states": [
     {
       "name": "normal-unshaded",
-      "directions": 4,
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
+      "directions": 4
     },
     {
       "name": "eject-unshaded",
@@ -72,24 +50,20 @@
       "directions": 4,
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1
+          0.4,
+          0.4
         ],
         [
-          0.1,
-          0.1,
-          0.1
+          0.4,
+          0.4
         ],
         [
-          0.1,
-          0.1,
-          0.1
+          0.4,
+          0.4
         ],
         [
-          0.1,
-          0.1,
-          0.1
+          0.4,
+          0.4
         ]
       ]
     },

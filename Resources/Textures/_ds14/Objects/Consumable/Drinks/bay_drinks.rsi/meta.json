@@ -8,9 +8,6 @@
   },
   "states": [
     {
-      "name": ""
-    },
-    {
       "name": "pitcher"
     },
     {
@@ -194,15 +191,6 @@
       "name": "coffee"
     },
     {
-      "name": "water"
-    },
-    {
-      "name": "water_cup"
-    },
-    {
-      "name": "water_cup_e"
-    },
-    {
       "name": "flask"
     },
     {
@@ -306,9 +294,6 @@
     },
     {
       "name": "lemon-lime"
-    },
-    {
-      "name": "sodawater"
     },
     {
       "name": "tonic"

@@ -177,8 +177,10 @@
       
 - type: entity
   id: VendingMachineHotfoodDS14
-  parent: VendingMachineChang # DS14:TODO: Placeholder
+  parent: VendingMachine
   suffix: DS14
+  name: hot foods
+  description: An old vending machine promising 'hot foods'. You doubt any of its contents are still edible.
   components:
   - type: Sprite
     noRot: true
@@ -193,6 +195,14 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Transform
     noRot: false
+  - type: VendingMachine
+    pack: HotfoodInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: HotfoodAds
+  - type: Speech
       
 - type: entity
   id: VendingMachineCartDS14 # Laptop vendor actually
@@ -459,25 +469,24 @@
   - type: Transform
     noRot: false
       
-# - type: entity
-  # id: VendingMachineSovietSodaDS14
-  # parent: 
-  # - VendingMachineDS14
-  # - VendingMachineSovietSoda
-  # components:
-  # - type: Sprite
-  #  noRot: true
-    # sprite: _ds14/Structures/Machines/VendingMachines/sodasoviet.rsi
-    # layers:
-    # - state: "off"
-      # map: ["enum.VendingMachineVisualLayers.Base"]
-    # - state: "off"
-      # map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
-      # shader: unshaded
-    # - state: panel
-      # map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  # - type: Transform
-    # noRot: false
+- type: entity
+  id: VendingMachineSovietSodaDS14
+  parent: VendingMachineSovietSoda
+  suffix: DS14
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _ds14/Structures/Machines/VendingMachines/sodasoviet.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Transform
+    noRot: false
       
 - type: entity
   id: VendingMachineTheaterDS14
@@ -521,7 +530,9 @@
       
 - type: entity
   id: VendingMachineWeebDS14
-  parent: VendingMachineTheater # DS14:TODO: Placeholder
+  parent: VendingMachine
+  name: Nippon-tan
+  description: A distressingly ethnic vending machine loaded with high sucrose low calorie for lack of better words snacks.
   suffix: DS14
   components:
   - type: Sprite
@@ -537,6 +548,14 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Transform
     noRot: false
+  - type: VendingMachine
+    pack: WeebVendInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: WeebVendAds
+  - type: Speech
       
 - type: entity
   id: VendingMachineYoutoolDS14
