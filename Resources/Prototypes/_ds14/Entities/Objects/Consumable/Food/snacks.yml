@@ -2,6 +2,35 @@
 # Base id: FoodSnackBase
 
 # Snacks
+- type: entity
+  parent: FoodSnackBase
+  id: FoodSnackProteinbar
+  name: protein bar
+  description: SwoleMAX brand protein bars, guaranteed to get you feeling perfectly overconfident.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chalky
+  - type: Sprite
+    sprite: _ds14/Objects/Consumable/Food/bay_food.rsi
+    state: proteinbar
+  - type: Item
+  - type: Food
+    trash: FoodPacketProteinbarTrash
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: CocoaPowder
+          Quantity: 1
+        - ReagentId: Theobromine
+          Quantity: 1
+    
 # Sol Vend / Mars Mart
 - type: entity
   parent: BaseItem
@@ -470,7 +499,7 @@
     state: oort
   - type: Item
   
-# weebovend
+# weebo vend
 - type: entity
   noSpawn: true
   parent: FoodPacketLunacakeTrash
@@ -490,3 +519,15 @@
   - type: Sprite
     state: stick
   - type: Item
+  
+#
+- type: entity
+  noSpawn: true
+  parent: FoodPacketLunacakeTrash
+  id: FoodPacketProteinbarTrash
+  name: protein bar wrapper
+  components:
+  - type: Sprite
+    state: proteinbar
+  - type: Item
+  

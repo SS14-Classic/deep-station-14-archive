@@ -9,6 +9,18 @@
 # uniform
 
 - type: entity
+  id: VendingMachineDS14
+  parent: VendingMachine
+  suffix: DS14
+  abstract: true
+  components:
+  - type: Sprite
+    noRot: true
+  - type: Transform
+    noRot: false
+  - type: Speech
+
+- type: entity
   id: VendingMachineCigsDS14
   parent: VendingMachineCigs
   suffix: DS14
@@ -128,11 +140,11 @@
       
 - type: entity
   id: VendingMachineFitnessDS14
-  parent: VendingMachine
-  suffix: DS14
+  parent: VendingMachineDS14
+  name: SweatMAX
+  description: An exercise aid and nutrition supplement vendor that preys on your inadequacy.
   components:
   - type: Sprite
-    noRot: true
     sprite: _ds14/Structures/Machines/VendingMachines/fitness.rsi
     layers:
     - state: "off"
@@ -145,16 +157,13 @@
       shader: unshaded
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  # - type: VendingMachine
-    # pack: AmmoVendInventory
-    # offState: off
-    # brokenState: broken
-    # normalState: normal-unshaded
-  # - type: Advertise
-    # pack: AmmoVendAds
-  # - type: Speech
-  - type: Transform
-    noRot: false
+  - type: VendingMachine
+    pack: FitnessVendInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: FitnessVendAds
   
 - type: entity
   id: VendingMachineGamesDS14
@@ -177,13 +186,11 @@
       
 - type: entity
   id: VendingMachineHotfoodDS14
-  parent: VendingMachine
-  suffix: DS14
+  parent: VendingMachineDS14
   name: hot foods
   description: An old vending machine promising 'hot foods'. You doubt any of its contents are still edible.
   components:
   - type: Sprite
-    noRot: true
     sprite: _ds14/Structures/Machines/VendingMachines/hotfood.rsi
     layers:
     - state: "off"
@@ -193,8 +200,6 @@
       shader: unshaded
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Transform
-    noRot: false
   - type: VendingMachine
     pack: HotfoodInventory
     offState: off
@@ -202,7 +207,6 @@
     normalState: normal-unshaded
   - type: Advertise
     pack: HotfoodAds
-  - type: Speech
       
 - type: entity
   id: VendingMachineCartDS14 # Laptop vendor actually
@@ -404,13 +408,11 @@
       
 - type: entity
   id: VendingMachineSolsnackDS14
-  parent: VendingMachine
+  parent: VendingMachineDS14
   name: Mars Mart
   description: A SolCentric vending machine dispensing treats from home.
-  suffix: DS14
   components:
   - type: Sprite
-    noRot: true
     sprite: _ds14/Structures/Machines/VendingMachines/solsnack.rsi
     layers:
     - state: "off"
@@ -420,8 +422,6 @@
       shader: unshaded
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Transform
-    noRot: false
   - type: VendingMachine
     pack: SolsnackInventory
     offState: off
@@ -429,7 +429,6 @@
     normalState: normal-unshaded
   - type: Advertise
     pack: SolsnackAds
-  - type: Speech
       
 - type: entity
   id: VendingMachineSodaDS14
@@ -530,10 +529,9 @@
       
 - type: entity
   id: VendingMachineWeebDS14
-  parent: VendingMachine
+  parent: VendingMachineDS14
   name: Nippon-tan
   description: A distressingly ethnic vending machine loaded with high sucrose low calorie for lack of better words snacks.
-  suffix: DS14
   components:
   - type: Sprite
     noRot: true
@@ -546,8 +544,6 @@
       shader: unshaded
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: Transform
-    noRot: false
   - type: VendingMachine
     pack: WeebVendInventory
     offState: off
@@ -555,7 +551,6 @@
     normalState: normal-unshaded
   - type: Advertise
     pack: WeebVendAds
-  - type: Speech
       
 - type: entity
   id: VendingMachineYoutoolDS14
