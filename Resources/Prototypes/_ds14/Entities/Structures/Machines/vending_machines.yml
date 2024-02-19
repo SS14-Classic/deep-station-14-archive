@@ -128,7 +128,7 @@
       
 - type: entity
   id: VendingMachineFitnessDS14
-  parent: VendingMachineDS14
+  parent: VendingMachine
   suffix: DS14
   components:
   - type: Sprite
@@ -394,7 +394,9 @@
       
 - type: entity
   id: VendingMachineSolsnackDS14
-  parent: VendingMachineSnack # DS14:TODO: Placeholder
+  parent: VendingMachine
+  name: Mars Mart
+  description: A SolCentric vending machine dispensing treats from home.
   suffix: DS14
   components:
   - type: Sprite
@@ -410,6 +412,14 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Transform
     noRot: false
+  - type: VendingMachine
+    pack: SolsnackInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: SolsnackAds
+  - type: Speech
       
 - type: entity
   id: VendingMachineSodaDS14
