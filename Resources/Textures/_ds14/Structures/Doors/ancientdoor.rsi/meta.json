@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from goonstation at https://github.com/goonstation/goonstation/blob/d9af7e722e2a1f4440cd499c1f0c1ccfaa07a303/icons/misc/worlds.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "ancientdoor_opened",
+      "directions": 4
+    },
+    {
+      "name": "ancientdoor_open",
+      "directions": 4,
+      "delays": [
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.1,
+          0.1,
+          0.1,
+          0.5
+        ],
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.1,
+          0.1,
+          0.1,
+          0.5
+        ],
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.1,
+          0.1,
+          0.1,
+          0.5
+        ],
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.1,
+          0.1,
+          0.1,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "ancientdoor_close",
+      "directions": 4,
+      "delays": [
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.1,
+          0.1,
+          0.1,
+          0.5
+        ],
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.1,
+          0.1,
+          0.1,
+          0.5
+        ],
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.1,
+          0.1,
+          0.1,
+          0.5
+        ],
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.1,
+          0.1,
+          0.1,
+          0.5
+        ]
+      ]
+    }
+  ]
+}

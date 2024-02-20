@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from goonstation at https://github.com/goonstation/goonstation/blob/d9af7e722e2a1f4440cd499c1f0c1ccfaa07a303/icons/misc/worlds.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "dirt"
+    },
+    {
+      "name": "dirtedge1"
+    },
+    {
+      "name": "dirtedge2"
+    },
+    {
+      "name": "dirtedge4"
+    },
+    {
+      "name": "dirtedge8"
+    },
+    {
+      "name": "dirtedge5"
+    },
+    {
+      "name": "dirtedge6"
+    },
+    {
+      "name": "dirtedge9"
+    },
+    {
+      "name": "dirtedge10"
+    },
+    {
+      "name": "dirt-dug"
+    },
+    {
+      "name": "grass"
+    },
+    {
+      "name": "grass_autumn"
+    },
+    {
+      "name": "grasstodirt",
+      "directions": 8
+    },
+    {
+      "name": "dirttograss",
+      "directions": 8
+    },
+    {
+      "name": "autumntodirt",
+      "directions": 8
+    },
+    {
+      "name": "grassplug",
+      "directions": 8
+    },
+    {
+      "name": "bluefloor",
+      "directions": 4
+    },
+    {
+      "name": "rootfloor_1"
+    },
+    {
+      "name": "rootfloor_2"
+    },
+    {
+      "name": "rootfloor_3"
+    },
+    {
+      "name": "ancientfloor"
+    },
+    {
+      "name": "ancientfloor2"
+    },
+    {
+      "name": "ancientfloor3"
+    },
+    {
+      "name": "mars_dirt"
+    },
+    {
+      "name": "swampgrass",
+      "directions": 4
+    },
+    {
+      "name": "swampgrass_edge",
+      "directions": 4
+    }
+  ]
+}

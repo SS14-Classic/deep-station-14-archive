@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from goonstation at https://github.com/goonstation/goonstation/blob/d9af7e722e2a1f4440cd499c1f0c1ccfaa07a303/icons/misc/worlds.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "stone",
+      "directions": 8
+    },
+    {
+      "name": "shrub",
+      "directions": 8
+    },
+    {
+      "name": "shrub_autumn",
+      "directions": 8
+    },
+    {
+      "name": "bush"
+    },
+    {
+      "name": "0,0"
+    },
+    {
+      "name": "1,0"
+    },
+    {
+      "name": "2,0"
+    },
+    {
+      "name": "0,1"
+    },
+    {
+      "name": "1,1"
+    },
+    {
+      "name": "2,1"
+    },
+    {
+      "name": "0,2"
+    },
+    {
+      "name": "1,2"
+    },
+    {
+      "name": "2,2"
+    },
+    {
+      "name": "iostone",
+      "directions": 8
+    },
+    {
+      "name": "rubble"
+    }
+  ]
+}
