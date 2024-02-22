@@ -6,17 +6,17 @@
     <BoxContainer Orientation="Vertical" Margin="5 0 5 0">
         <BoxContainer Orientation="Vertical">
             <BoxContainer Orientation="Horizontal">
-                <Label Text="{Loc 'bank-atm-menu-balance-label'}"
+                <Label Text="{Loc 'cargo-shipyard-console-bank-label'}"
                     StyleClasses="LabelKeyText" />
-                <Label Name="BalanceLabel"
+                <Label Name="BankAccountLabel"
                     Text="{Loc 'shipyard-console-no-bank'}" />
             </BoxContainer>
         </BoxContainer>
         <BoxContainer Orientation="Vertical">
             <BoxContainer Orientation="Horizontal">
-                <Label Text="{Loc 'shipyard-console-appraisal-label'}"
+                <Label Text="{Loc 'cargo-shipyard-console-sell-label'}"
                     StyleClasses="LabelKeyText" />
-                <Label Name="ShipAppraisalLabel"
+                <Label Name="ShipSellValueLabel"
                     Text="{Loc 'shipyard-console-no-deed'}" />
             </BoxContainer>
         </BoxContainer>
