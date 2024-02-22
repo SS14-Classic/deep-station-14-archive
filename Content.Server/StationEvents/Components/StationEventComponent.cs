@@ -1,10 +1,11 @@
-﻿using Robust.Shared.Audio;
+﻿using Content.Server.StationEvents.Metric;
+using Robust.Shared.Audio;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Server.StationEvents.Components;
 
 /// <summary>
-///     Defines basic data for a station event
+///   Defines basic data for a station event
 /// </summary>
 [RegisterComponent]
 public sealed partial class StationEventComponent : Component
@@ -31,59 +32,67 @@ public sealed partial class StationEventComponent : Component
     public SoundSpecifier? EndAudio;
 
     /// <summary>
-    ///     In minutes, when is the first round time this event can start
+    ///   In minutes, when is the first round time this event can start
     /// </summary>
     [DataField("earliestStart")]
     public int EarliestStart = 5;
 
     /// <summary>
-    ///     In minutes, the amount of time before the same event can occur again
+    ///   In minutes, the amount of time before the same event can occur again
     /// </summary>
     [DataField("reoccurrenceDelay")]
     public int ReoccurrenceDelay = 30;
 
     /// <summary>
-    ///     How long after being added does the event start
+    ///   How long after being added does the event start
     /// </summary>
     [DataField("startDelay")]
     public TimeSpan StartDelay = TimeSpan.Zero;
 
     /// <summary>
-    ///     How long the event lasts.
+    ///   How long the event lasts.
     /// </summary>
     [DataField("duration")]
     public TimeSpan? Duration = TimeSpan.FromSeconds(1);
 
     /// <summary>
-    ///     The max amount of time the event lasts.
+    ///   The max amount of time the event lasts.
     /// </summary>
     [DataField("maxDuration")]
     public TimeSpan? MaxDuration;
 
     /// <summary>
-    ///     How many players need to be present on station for the event to run
+    ///   How many players need to be present on station for the event to run
     /// </summary>
     /// <remarks>
-    ///     To avoid running deadly events with low-pop
+    ///   To avoid running deadly events with low-pop
     /// </remarks>
     [DataField("minimumPlayers")]
     public int MinimumPlayers;
 
     /// <summary>
-    ///     How many times this even can occur in a single round
+    ///   How many times this even can occur in a single round
     /// </summary>
     [DataField("maxOccurrences")]
     public int? MaxOccurrences;
 
     /// <summary>
-    /// When the station event starts.
+    ///   When the station event starts.
     /// </summary>
     [DataField("startTime", customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan StartTime;
 
     /// <summary>
-    /// When the station event ends.
+    ///   When the station event ends.
     /// </summary>
     [DataField("endTime", customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan? EndTime;
+
+    /// <summary>
+    ///   Expected Chaos changes when this event occurs.
+    ///   Used by the GameDirector, which picks an event expected to make the desired chaos changes.
+    /// </summary>
+    [DataField("chaos")]
+    public ChaosMetrics Chaos = new ChaosMetrics();
+
 }

@@ -7,6 +7,9 @@
     weight: 10
     startDelay: 10
     duration: 120
+    chaos:
+      Hunger: -80
+      Thirst: -40
     earliestStart: 20
   - type: CargoGiftsRule
     description: cargo-gift-pizza-small
@@ -28,6 +31,9 @@
       startDelay: 10
       duration: 240
       minimumPlayers: 50
+      chaos:
+        Hunger: -300
+        Thirst: -120
       earliestStart: 40
     - type: CargoGiftsRule
       description: cargo-gift-pizza-large
@@ -49,6 +55,9 @@
       duration: 240
       earliestStart: 30
       minimumPlayers: 10
+      chaos:
+        Atmos: -300
+        Power: -100
     - type: CargoGiftsRule
       description: cargo-gift-eng
       sender: cargo-gift-default-sender
@@ -71,6 +80,9 @@
       startDelay: 10
       duration: 120
       minimumPlayers: 40
+      chaos:
+        Hunger: -100
+        Thirst: -100
       earliestStart: 30
     - type: CargoGiftsRule
       description: cargo-gift-vending
@@ -94,6 +106,8 @@
       startDelay: 10
       duration: 120
       minimumPlayers: 30
+      chaos:
+        Mess: -200
       earliestStart: 20
     - type: CargoGiftsRule
       description: cargo-gift-cleaning
@@ -113,8 +127,11 @@
       weight: 8
       startDelay: 10
       duration: 120
-      earliestStart: 20
+      earliestStart: 10
       minimumPlayers: 30
+      chaos:
+        Medical: -200
+        Friend: 10
     - type: CargoGiftsRule
       description: cargo-gift-medical-supply
       sender: cargo-gift-default-sender
@@ -137,6 +154,8 @@
       duration: 120
       earliestStart: 10
       minimumPlayers: 40
+      chaos:
+        Atmos: -300
     - type: CargoGiftsRule
       description: cargo-gift-space-protection
       sender: cargo-gift-default-sender
@@ -159,6 +178,8 @@
       duration: 120
       earliestStart: 20
       minimumPlayers: 40
+      chaos:
+        Atmos: -200
     - type: CargoGiftsRule
       description: cargo-gift-fire-protection
       sender: cargo-gift-default-sender
@@ -177,8 +198,11 @@
       weight: 2
       startDelay: 10
       duration: 120
-      earliestStart: 20
+      earliestStart: 10
       minimumPlayers: 50
+      chaos:
+        Hostile: -100
+        Combat: -100
     - type: CargoGiftsRule
       description: cargo-gift-security-guns
       sender: cargo-gift-default-sender
@@ -198,8 +222,11 @@
       weight: 4
       startDelay: 10
       duration: 120
-      earliestStart: 20
+      earliestStart: 5
       minimumPlayers: 50
+      chaos:
+        Hostile: -30
+        Combat: -30
     - type: CargoGiftsRule
       description: cargo-gift-security-riot
       sender: cargo-gift-default-sender

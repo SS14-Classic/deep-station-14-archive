@@ -29,6 +29,9 @@
         acts: ["Destruction"]
   - type: Appearance
   - type: AnimationPlayer
+  - type: Tag
+    tags:
+      - Grenade
   - type: GenericVisualizer
     visuals:
       enum.Trigger.TriggerVisuals.VisualState:

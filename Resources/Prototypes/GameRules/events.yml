@@ -7,6 +7,8 @@
     weight: 10
     startDelay: 30
     duration: 35
+    chaos:
+      Anomaly: 100
   - type: AnomalySpawnRule
 
 - type: entity
@@ -18,6 +20,8 @@
     weight: 5
     startDelay: 30
     duration: 35
+    chaos:
+      Anomaly: 40
   - type: BluespaceArtifactRule
 
 - type: entity
@@ -30,6 +34,8 @@
     reoccurrenceDelay: 5
     earliestStart: 1
     duration: 1
+    chaos:
+      Anomaly: 40
   - type: BluespaceLockerRule
 
 - type: entity
@@ -41,6 +47,8 @@
     weight: 10
     duration: 1
     minimumPlayers: 15
+    chaos:
+      Power: 100
   - type: BreakerFlipRule
 
 - type: entity
@@ -89,6 +97,12 @@
     earliestStart: 45
     reoccurrenceDelay: 60
     minimumPlayers: 20
+    chaos:
+      Hostile: 20
+      Friend: 20
+      Combat: 40
+      Death: 100
+      Medical: 100
   - type: RandomSpawnRule
     prototype: SpawnPointGhostDragon
 
@@ -115,6 +129,12 @@
     duration: 1
     earliestStart: 45
     minimumPlayers: 20
+    chaos:
+      Hostile: 20
+      Friend: 20
+      Combat: 40
+      Death: 100
+      Medical: 100
   - type: RandomSpawnRule
     prototype: MobRevenant
 
@@ -142,6 +162,9 @@
     minimumPlayers: 5
     weight: 10
     startDelay: 20
+    chaos:
+      Atmos: 100
+      Medical: 50
   - type: GasLeakRule
 
 - type: entity
@@ -155,6 +178,10 @@
     weight: 5
     startDelay: 50
     duration: 240
+    chaos:
+      Hostile: 20
+      Friend: 20
+      Medical: 100
   - type: KudzuGrowthRule
 
 - type: entity
@@ -174,6 +201,10 @@
         volume: -4
     duration: null #ending is handled by MeteorSwarmRule
     startDelay: 30
+    chaos:
+      Power: 50
+      Atmos: 200
+      Medical: 100
   - type: MeteorSwarmRule
 
 - type: entity
@@ -237,6 +268,8 @@
     startDelay: 24
     duration: 60
     maxDuration: 120
+    chaos:
+      Power: 200
   - type: PowerGridCheckRule
 
 - type: entity
@@ -264,6 +297,8 @@
       path: /Audio/Announcements/attention.ogg
     duration: 120
     maxDuration: 240
+    chaos:
+      Friend: 20
   - type: SolarFlareRule
     onlyJamHeadsets: true
     affectedChannels:
@@ -307,6 +342,8 @@
     weight: 5
     startDelay: 50
     duration: 60
+    chaos:
+      Mess: 200
   - type: VentClogRule
 
 - type: entity
@@ -346,6 +383,10 @@
     minimumPlayers: 15
     weight: 5
     duration: 60
+    chaos:
+      Hostile: 10
+      Friend: 10
+      Medical: 50
   - type: VentCrittersRule
     entries:
     - id: MobAdultSlimesBlueAngry
@@ -369,6 +410,10 @@
     minimumPlayers: 15
     weight: 5
     duration: 60
+    chaos:
+      Hostile: 40
+      Friend: 20
+      Medical: 150
   - type: VentCrittersRule
     entries:
     - id: MobGiantSpiderAngry
@@ -403,6 +448,11 @@
     minimumPlayers: 15
     weight: 5
     duration: 1
+    chaos:
+      Hostile: 40
+      Friend: 60
+      Medical: 200
+      Death: 200
   - type: ZombieRule
     minStartDelay: 0 #let them know immediately
     maxStartDelay: 10
@@ -421,6 +471,11 @@
     minimumPlayers: 10
     reoccurrenceDelay: 30
     duration: 1
+    chaos:
+      Hostile: 20
+      Friend: 40
+      Medical: 200
+      Death: 100
   - type: LoneOpsSpawnRule
 
 - type: entity

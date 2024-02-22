@@ -47,27 +47,32 @@ public sealed class EventManagerSystem : EntitySystem
     }
 
     /// <summary>
-    /// Randomly runs a valid event.
+    ///   Randomly runs a valid event.
     /// </summary>
-    public string RunRandomEvent()
+    public void RunRandomEvent()
     {
         var randomEvent = PickRandomEvent();
 
         if (randomEvent == null)
         {
-            var errStr = Loc.GetString("station-event-system-run-random-event-no-valid-events");
-            _sawmill.Error(errStr);
-            return errStr;
+            _sawmill.Error("No valid event was given");
+            return;
         }
 
-        var ent = GameTicker.AddGameRule(randomEvent);
-        var str = Loc.GetString("station-event-system-run-event",("eventName", ToPrettyString(ent)));
-        _sawmill.Info(str);
-        return str;
+        RunNamedEvent(randomEvent);
     }
 
     /// <summary>
-    /// Randomly picks a valid event.
+    ///   Runs a specific named event.
+    /// </summary>
+    public void RunNamedEvent(string eventId)
+    {
+        var ent = GameTicker.AddGameRule(eventId);
+        _sawmill.Info($"Running event {eventId} as entity {ent}");
+    }
+
+    /// <summary>
+    ///   Randomly picks a valid event.
     /// </summary>
     public string? PickRandomEvent()
     {
@@ -77,7 +82,7 @@ public sealed class EventManagerSystem : EntitySystem
     }
 
     /// <summary>
-    /// Pick a random event from the available events at this time, also considering their weightings.
+    ///   Pick a random event from the available events at this time, also considering their weightings.
     /// </summary>
     /// <returns></returns>
     private string? FindEvent(Dictionary<EntityPrototype, StationEventComponent> availableEvents)
@@ -112,7 +117,7 @@ public sealed class EventManagerSystem : EntitySystem
     }
 
     /// <summary>
-    /// Gets the events that have met their player count, time-until start, etc.
+    ///   Gets the events that have met their player count, time-until start, etc.
     /// </summary>
     /// <param name="ignoreEarliestStart"></param>
     /// <returns></returns>
@@ -177,7 +182,7 @@ public sealed class EventManagerSystem : EntitySystem
         return TimeSpan.Zero;
     }
 
-    private bool CanRun(EntityPrototype prototype, StationEventComponent stationEvent, int playerCount, TimeSpan currentTime)
+    public bool CanRun(EntityPrototype prototype, StationEventComponent stationEvent, int playerCount, TimeSpan currentTime)
     {
         if (GameTicker.IsGameRuleActive(prototype.ID))
             return false;
