@@ -1,8 +1,12 @@
+using System.Linq;
 using Content.Server.Ghost.Roles.Components;
 using Content.Server.Speech.Components;
 using Content.Shared.Chemistry.Reagent;
+using Content.Shared.Language;
+using Content.Shared.Language.Systems;
 using Content.Shared.Mind.Components;
 using Robust.Shared.Prototypes;
+using Content.Shared.Humanoid; //Delta-V - Banning humanoids from becoming ghost roles.
 
 namespace Content.Server.Chemistry.ReagentEffects;
 
@@ -22,6 +26,22 @@ public sealed partial class MakeSentient : ReagentEffect
         entityManager.RemoveComponent<ReplacementAccentComponent>(uid);
         entityManager.RemoveComponent<MonkeyAccentComponent>(uid);
 
+        // Frontier - languages mechanic
+        // Try to make the entity speak GalacticCommon - the default language for sentient species
+        var speaker = entityManager.EnsureComponent<LanguageSpeakerComponent>(uid);
+        var gc = SharedLanguageSystem.GalacticCommon.ID;
+
+        if (!speaker.UnderstoodLanguages.Contains(gc))
+            speaker.UnderstoodLanguages.Add(gc);
+
+        if (!speaker.SpokenLanguages.Contains(gc))
+        {
+            speaker.CurrentLanguage = gc;
+            speaker.SpokenLanguages.Add(gc);
+
+            args.EntityManager.EventBus.RaiseLocalEvent(uid, new SharedLanguageSystem.LanguagesUpdateEvent(), true);
+        }
+
         // Stops from adding a ghost role to things like people who already have a mind
         if (entityManager.TryGetComponent<MindContainerComponent>(uid, out var mindContainer) && mindContainer.HasMind)
         {
@@ -30,6 +50,15 @@ public sealed partial class MakeSentient : ReagentEffect
 
         // Don't add a ghost role to things that already have ghost roles
         if (entityManager.TryGetComponent(uid, out GhostRoleComponent? ghostRole))
+        {
+            return;
+        }
+
+        // Delta-V: Do not allow humanoids to become sentient. Intended to stop people from
+        // repeatedly cloning themselves and using cognizine on their bodies.
+        // HumanoidAppearanceComponent is common to all player species, and is also used for the
+        // Ripley pilot whitelist, so there's a precedent for using it for this kind of check.
+        if (entityManager.HasComponent<HumanoidAppearanceComponent>(uid))
         {
             return;
         }
