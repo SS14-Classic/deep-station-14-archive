@@ -74,8 +74,14 @@
           Quantity: 5
   - type: MeleeChemicalInjector
     solution: melee
-  - type: ReplacementAccent
-    accent: genericAggressive
+  # Frontier - languages mechanic
+  #  - type: ReplacementAccent
+  #    accent: genericAggressive
+  - type: LanguageSpeaker
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
   - type: Speech
     speechVerb: SmallMob
   - type: NonSpreaderZombie

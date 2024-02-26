@@ -70,8 +70,14 @@
       tags:
         - Carp
         - DoorBumpOpener
-    - type: ReplacementAccent
-      accent: genericAggressive
+    # Frontier - languages mechanic
+#    - type: ReplacementAccent
+#      accent: genericAggressive
+    - type: LanguageSpeaker
+      speaks:
+      - Xeno
+      understands:
+      - Xeno
     - type: Speech
       speechVerb: LargeMob
     - type: InteractionPopup
@@ -167,23 +173,24 @@
     - type: HTN
       rootTask:
         task: DragonCarpCompound
+  # Frontier - languages mechanic
+    - type: LanguageSpeaker
+      speaks:
+      - GalacticCommon
+      - Xeno
+      understands:
+      - GalacticCommon
+      - Xeno
 
 - type: entity
   id: MobCarpDungeon
   parent: MobCarp
   suffix: Dungeon
   components:
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      50: Dead
-  - type: SlowOnDamage
-    speedModifierThresholds:
-      25: 0.7
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 6
+        Slash: 5
 
 - type: entity
   name: sharkminnow

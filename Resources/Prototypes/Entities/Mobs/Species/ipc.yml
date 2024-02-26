@@ -129,6 +129,14 @@
     - type: Inventory
       templateId: ipc
     - type: ZombieImmune
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    - RobotTalk
+    understands:
+    - GalacticCommon
+    - RobotTalk
 
 - type: entity
   name: Urist McIPC

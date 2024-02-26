@@ -301,6 +301,12 @@
         Asphyxiation: -1.0
   - type: FireVisuals
     alternateState: Standing
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - GalacticCommon
+    understands:
+    - GalacticCommon
 
 - type: entity
   save: false

@@ -48,8 +48,14 @@
     flavorKind: station-event-random-sentience-flavor-organic
   - type: Bloodstream
     bloodMaxVolume: 50
-  - type: ReplacementAccent
-    accent: mouse
+    # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: mouse
+  - type: LanguageSpeaker
+    speaks:
+    - Mouse
+    understands:
+    - Mouse
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Effects/bite.ogg
@@ -121,7 +127,13 @@
     rootTask:
       task: SimpleHostileCompound
   - type: ZombieImmune
-
+ # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - Bee
+    understands:
+    - Bee
+    
 - type: entity
   name: bee
   suffix: Angry
@@ -221,8 +233,14 @@
   - type: EggLayer
     eggSpawn:
     - id: FoodEgg
-  - type: ReplacementAccent
-    accent: chicken
+  # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: chicken
+  - type: LanguageSpeaker
+    speaks:
+    - Chicken
+    understands:
+    - Chicken
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-organic
   - type: NpcFactionMember
@@ -589,8 +607,14 @@
   - type: EggLayer
     eggSpawn:
     - id: FoodEgg
-  - type: ReplacementAccent
-    accent: duck
+  # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: duck
+  - type: LanguageSpeaker
+    speaks:
+    - Duck
+    understands:
+    - Duck
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-organic
   - type: NpcFactionMember
@@ -775,6 +799,12 @@
   - type: GuideHelp
     guides:
     - Chef
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - Cow
+    understands:
+    - Cow
 
 - type: entity
   name: crab
@@ -1062,8 +1092,14 @@
   - type: Inventory
     speciesId: kangaroo
     templateId: kangaroo
-  - type: ReplacementAccent
-    accent: kangaroo
+    # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: kangaroo
+  - type: LanguageSpeaker
+    speaks:
+    - Kangaroo
+    understands:
+    - Kangaroo
   - type: InventorySlots
   - type: Strippable
   - type: Butcherable
@@ -1262,6 +1298,12 @@
         Burn: 3
     clumsySound:
       path: /Audio/Animals/monkey_scream.ogg
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - Monkey
+    understands:
+    - Monkey
 
 - type: entity
   name: monkey
@@ -1544,8 +1586,14 @@
     spawned:
     - id: FoodMeatRat
       amount: 1
-  - type: ReplacementAccent
-    accent: mouse
+    # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: mouse
+  - type: LanguageSpeaker
+    speaks:
+    - Mouse
+    understands:
+    - Mouse
   - type: Tag
     tags:
     - Trash
@@ -2108,8 +2156,14 @@
   - type: MeleeChemicalInjector
     transferAmount: 0.75
     solution: melee
-  - type: ReplacementAccent
-    accent: xeno
+  # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: xeno
+  - type: LanguageSpeaker
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
   - type: InteractionPopup
     successChance: 0.5
     interactSuccessString: petting-success-tarantula
@@ -2469,8 +2523,12 @@
     spawned:
     - id: FoodMeat
       amount: 2
-  - type: ReplacementAccent
-    accent: dog
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - Dog
+    understands:
+    - Dog
   - type: InteractionPopup
     interactSuccessString: petting-success-dog
     interactFailureString: petting-failure-generic
@@ -2487,6 +2545,12 @@
   - type: Tag
     tags:
     - VimPilot
+  # Frontier - languages mechanic
+  - type: LanguageSpeaker
+    speaks:
+    - Dog
+    understands:
+    - Dog
 
 - type: entity
   name: corrupted corgi
@@ -2621,8 +2685,14 @@
     spawned:
     - id: FoodMeat
       amount: 3
-  - type: ReplacementAccent
-    accent: cat
+    # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: cat
+  - type: LanguageSpeaker
+    speaks:
+    - Cat
+    understands:
+    - Cat
   - type: InteractionPopup
     successChance: 0.7
     interactSuccessString: petting-success-cat
@@ -2984,8 +3054,14 @@
     spawned:
     - id: FoodMeat
       amount: 1
-  - type: ReplacementAccent
-    accent: mouse
+    # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: mouse
+  - type: LanguageSpeaker
+    speaks:
+    - Mouse
+    understands:
+    - Mouse
   - type: Tag
     tags:
     - VimPilot
@@ -3091,8 +3167,14 @@
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
       path: /Audio/Animals/pig_oink.ogg
-  - type: ReplacementAccent
-    accent: pig
+    # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: pig
+  - type: LanguageSpeaker
+    speaks:
+    - Pig
+    understands:
+    - Pig
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-organic
   - type: NpcFactionMember

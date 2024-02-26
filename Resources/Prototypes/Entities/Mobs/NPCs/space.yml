@@ -165,8 +165,14 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepBounce
-  - type: ReplacementAccent
-    accent: kangaroo
+  # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: kangaroo
+  - type: LanguageSpeaker
+    speaks:
+    - Kangaroo
+    understands:
+    - Kangaroo
   - type: InventorySlots
   - type: Strippable
   - type: UserInterface
@@ -238,18 +244,24 @@
     damage:
       types:
         Piercing: 6
-        Poison: 4
+        Poison: 2
   - type: SolutionContainerManager
     solutions:
       melee:
         reagents:
         - ReagentId: ChloralHydrate
-          Quantity: 80
+          Quantity: 60
   - type: MeleeChemicalInjector
     solution: melee
-    transferAmount: 4
-  - type: ReplacementAccent
-    accent: xeno
+    transferAmount: 3
+  # Frontier - languages mechanic
+#  - type: ReplacementAccent
+#    accent: xeno
+  - type: LanguageSpeaker
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
   - type: InteractionPopup
     successChance: 0.20
     interactSuccessString: petting-success-tarantula
@@ -268,8 +280,6 @@
       Male: UnisexArachnid
       Female: UnisexArachnid
       Unsexed: UnisexArachnid
-  - type: TypingIndicator
-    proto: spider
 
 - type: entity
   id: MobSpiderSpaceSalvage
@@ -351,8 +361,14 @@
     - type: MeleeChemicalInjector
       solution: melee
       transferAmount: 6
-    - type: ReplacementAccent
-      accent: xeno
+#      Frontier - languages mechanic
+#    - type: ReplacementAccent
+#      accent: xeno
+    - type: LanguageSpeaker
+      speaks:
+      - Xeno
+      understands:
+      - Xeno
     - type: InteractionPopup
       successChance: 0.2
       interactSuccessString: petting-success-snake
