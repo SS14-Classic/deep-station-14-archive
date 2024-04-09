@@ -7708,7 +7708,7 @@ entities:
       pos: 86.5,-33.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -2409.6978
+      secondsUntilStateChange: -3488.5728
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8255,7 +8255,7 @@ entities:
       pos: -63.5,-11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -64481.73
+      secondsUntilStateChange: -65560.6
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -9122,7 +9122,7 @@ entities:
       pos: 16.5,-6.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -17159.764
+      secondsUntilStateChange: -18238.639
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -9694,7 +9694,7 @@ entities:
       pos: 18.5,28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -105503.32
+      secondsUntilStateChange: -106582.195
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10117,7 +10117,7 @@ entities:
       pos: -62.5,-35.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -94553.1
+      secondsUntilStateChange: -95631.98
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10128,7 +10128,7 @@ entities:
       pos: -61.5,-35.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -94553.87
+      secondsUntilStateChange: -95632.74
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -60171,7 +60171,7 @@ entities:
       pos: 6.5,-18.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -54965.14
+      secondsUntilStateChange: -56044.016
       state: Closing
   - uid: 21556
     components:
@@ -102659,7 +102659,7 @@ entities:
       pos: -1.5,21.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -97886.23
+      secondsUntilStateChange: -98965.1
       state: Closing
   - uid: 8084
     components:
@@ -145016,7 +145016,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -89705.41
+      secondsUntilStateChange: -90784.28
       state: Opening
   - uid: 4895
     components:
@@ -147046,7 +147046,7 @@ entities:
       pos: 5.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -68873.92
+      secondsUntilStateChange: -69952.8
       state: Opening
 - proto: WoodenSupportWall
   entities:
