@@ -66,7 +66,7 @@
       damageContainer: Biological
       damageModifierSet: Metallic
     - type: Icon
-      sprite: Mobs/Species/IPC/parts.rsi
+      sprite: Mobs/Species/IPCs/parts.rsi
       state: full
     # Damage and speed
     - type: Bloodstream
