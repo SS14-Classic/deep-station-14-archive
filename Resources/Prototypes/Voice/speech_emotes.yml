@@ -254,15 +254,15 @@
     - whirrs.
     - whirrs!
 
-- type: emote
-  id: Beep
-  category: Vocal
-  chatMessages: [beeps]
-  chatTriggers:
-    - beep
-    - beeps
-    - beeps.
-    - beeps!
+# - type: emote
+  # id: Beep
+  # category: Vocal
+  # chatMessages: [beeps]
+  # chatTriggers:
+    # - beep
+    # - beeps
+    # - beeps.
+    # - beeps!
     
 - type: emote
   id: Boop
